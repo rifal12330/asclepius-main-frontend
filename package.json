@@ -8,8 +8,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "http-server": "^14.1.1"
   }
 }
-s
