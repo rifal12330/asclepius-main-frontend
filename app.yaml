@@ -1,13 +1,19 @@
-runtime: nodejs20
-
-entrypoint: http-server ./public
- 
-instance_class: F2
-automatic_scaling:
-  min_instances: 1
-  max_instances: 10
+runtime: nodejs18
+instance_class: F1
+env: standard
 
 handlers:
-- url: /favicon.ico
-  static_files: favicon.ico
-  upload: favicon.ico
+  - url: /favicon\.png
+    static_files: favicon.png
+    upload: favicon\.png
+  - url: /src/styles
+    static_dir: src/styles
+  - url: /src/scripts
+    static_dir: src/scripts
+  - url: /src/images
+    static_dir: src/images
+  - url: /
+    static_files: index.html
+    upload: index.html
+  - url: /.*
+    script: auto
