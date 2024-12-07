@@ -1,1 +1,6 @@
 runtime: nodejs20  # If you're using Node.js (e.g., React)
+
+handlers:
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
