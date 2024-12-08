@@ -1,5 +1,5 @@
 // TODO: Silakan sesuaikan BASE URL dari endpoint Anda
-const BASE_URL = 'https://mlgc-backend-api-460155632467.asia-southeast2.run.app';
+const BASE_URL = 'https://mlgc-backend-460155632467.asia-southeast2.run.app';
 
 const ENDPOINT = {
   predict: `${BASE_URL}/predict`,
